@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crystal Collector</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <link rel="stylesheet" href = "css/style.css"> 
+
+    </head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-light bg-light">
+          <span class="navbar-brand mb-0 h1">Gabriela Menocal</span>
+        </nav>
+
+        <button class="btn btn-info" value="restart" id="restart"> <h2> Restart </h2></button>
+
+
+    </header>
+
+    
+  <main>
+        <div class="container">
+
+                <div id="title" class="jumbotron">
+                    <div  class="row">
+                        <div class="col-md-3">
+                             <img src= "images/crystal.gif" class="img-fluid diamond" alt="Crystal">                                   
+                        </div>
+
+                        <div class="col-md-4">
+                                <h2 class="text-center">Crystal - Collector</h2>
+                        </div>
+
+                        <div class="col-md-3">
+                                <img src= "images/crystal.gif" class="img-fluid diamond" alt="Diamond animated gif">                                   
+                        </div>
+                    </div>
+                </div>
+           
+            <div  class="row">                
+                <!-- SCORE TABLE -->
+                <div id="score" class="col-md-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3> Score Status</h3> 
+                        </div>
+
+                        <div class="card-body">
+                            <h5 class="card-title">Wins:<span id="win"> 0 </span></h5>
+                            <h5 class="card-title">Losses: <span id="lose"> 0 </span></h5>
+                            <h5 class="card-title">Times: <span id="times"> 0 </span></h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                </div>
+
+                <!-- RANDOM BUTTON -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3> Random Number</h3> 
+                        </div>
+                            
+                            <div class="card-body">
+                            <h5 class="card-title">       
+                            <button id="random-button" class="btn btn-primary btn-lg"><h1>?</h1></button>
+                               <span id="random-view"> <span id="random"></span></span>
+                            </h5>                                                                       
+                        </div>
+                    </div>
+                </div>
+            </div>
+ 
+            <!-- GEMS CLASS: CRYSTAL -->    
+            <div class="row">                                                
+                    <div class="col-md-4 offset-md-4">
+                        <span id="gems"></span>                                               
+                    </div>        
+           </div>
+
+            <!-- GEMS CLASS: CRYSTAL -->    
+
+
+
+     
+
+  </main>
+    
+    <footer>
+            <div class="card-footer text-muted">
+                    <p> <strong> Copyright © 2018 by Gabriela Elizabeth Menocal Cover </strong>  </p>
+            </div>
+    </footer>
+
+    <script type="text/javascript" src="game.js"></script>    
+</body>
+</html>

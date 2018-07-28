@@ -1,0 +1,44 @@
+.crystal {
+    width: 25%;
+};
+
+.container{
+    margin: solid black 5px;
+    background-color: aquamarine;
+
+}
+
+
+body{
+        /* background-image: url("gameback.jpg"); */
+        /* background-repeat: no-repeat;
+        background-position: right top;
+        margin-right: 200px;
+        background-attachment: fixed; */
+        background-color: aqua;
+    }
+
+#title{
+    /* background-image: url("images/crystal2.gif"); */
+    background-color: azure;
+}
+
+footer{
+    text-align: center;
+}
+
+.diamond{
+    width: 100px;;
+}
+
+#random-view{
+    font-size: 50px;
+    color: blue;
+    margin-left: 15px;
+
+}
+
+#restart{
+    margin-top: 25px;
+    margin-left: 15px;
+}
