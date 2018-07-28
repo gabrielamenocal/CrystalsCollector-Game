@@ -1,21 +1,34 @@
 
 var gem1="images/gem1.jpg";  gem2="images/gem2.jpg"; gem3="images/gem3.jpg"; gem4="images/gem4.jpg";
-var images =[gem1,gem2 , gem3, gem4 ];
+var images = [gem1,gem2 , gem3, gem4 ];
 var counter=0;
 var matchvalue;
 var win=0; losses=0;
 
 $("#afterPlayLose").hide();
 $("#afterPlayWin").hide();
+$("#error").hide();
+
+
 
 // Crystal 1-12 and random 19-120.
-$(document).ready(function() {        
+$(document).ready(function() {  
 
     $("#random-button").on("click", function() {
 
         matchvalue = Math.round((Math.random()*101) + 19 );      
         $("#random").html(matchvalue);
     });
+
+    try{
+    
+        if(matchvalue!="")  throw "";
+    }    
+
+    catch(err)
+    {
+        $("#error").text("Please press the Random Button." + err);
+    }
      
     for (var i =0; i< images.length; i++){
 
