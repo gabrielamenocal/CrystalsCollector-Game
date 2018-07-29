@@ -24,8 +24,8 @@ $(document).ready(function() {
         var newimage=$("<img>");
         newimage.attr("src", images[i]);
         newimage.attr("id", ("gem" + (i+1)));
-        newimage.attr("info", Math.round(Math.random()*12 +1));
-        console.log(Math.round(Math.random()*12+1));
+        newimage.attr("info", Math.ceil(Math.random()*12));
+        console.log(Math.ceil(Math.random()*12));
         newimage.addClass("crystal");
         $(".container #gems").append(newimage);
     };
@@ -56,22 +56,22 @@ $(document).ready(function() {
                 clearAfterPlay(event);
             },3000);
 
-          }
-          else {
-            try{
-    
-                if(matchvalue!="")  throw "";
-                $("#error").hide();
-            }    
-        
-            catch(err)
-            {
-                
-                $("#error").text("Please press the Random Button." + err);
-                $("#error").show();
-        
-            }
           };
+        //   else {
+        //     try{
+    
+        //         if(matchvalue!="")  throw "";
+        //         $("#error").hide();
+        //     }    
+        
+        //     catch(err)
+        //     {
+                
+        //         $("#error").text("Please press the Random Button." + err);
+        //         $("#error").show();
+        
+        //     }
+        //   };
 
     });
 
@@ -86,6 +86,14 @@ function clearAfterPlay() {
      $("#afterPlayWin").hide();
      $("#error").hide();
      $("#random, #result, #afterPlayLose, #afterPlayWin").empty();
+
+     for (var i =0; i< images.length; i++){
+        newValue =$("#gem" + (i+1));
+        newValue.attr("info", Math.ceil(Math.random()*12));
+        console.log(Math.ceil(Math.random()*12));
+    };
+
+
   }
 
 
