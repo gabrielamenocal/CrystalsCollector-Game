@@ -11,7 +11,7 @@ html {
 
 main{
         /* background-image: url("images/gameback.png"); */
-        /* background-image: url("images/game_background.png");       */
+        background-image: url("images/game_background.png");      
         /* background-repeat: no-repeat;
         background-position: right top;
         margin-right: 200px;
@@ -69,3 +69,15 @@ footer{
     width: 450px;
     margin: 10px;
  } 
+
+ aside { 
+    position: relative;
+    float:left;
+    top: 0px;
+    bottom: 0px;
+    font-size: 24px;
+    margin-left: 20px;
+    margin-top: 30px;
+    widows: 200px;
+    text-align: justify;
+  }

@@ -9,8 +9,6 @@ $("#afterPlayLose").hide();
 $("#afterPlayWin").hide();
 $("#error").hide();
 
-
-
 // Crystal 1-12 and random 19-120.
 $(document).ready(function() {  
 
@@ -20,15 +18,19 @@ $(document).ready(function() {
         $("#random").html(matchvalue);
     });
 
-    try{
+    // try{
     
-        if(matchvalue!="")  throw "";
-    }    
+    //     if(matchvalue!="")  throw "";
+    //     $("#error").hide();
+    // }    
 
-    catch(err)
-    {
-        $("#error").text("Please press the Random Button." + err);
-    }
+    // catch(err)
+    // {
+        
+    //     $("#error").text("Please press the Random Button." + err);
+    //     $("#error").show();
+
+    // }
      
     for (var i =0; i< images.length; i++){
 
@@ -80,6 +82,7 @@ function clearAfterPlay() {
      matchvalue=0;
      $("#afterPlayLose").hide();
      $("#afterPlayWin").hide();
+     $("#error").hide();
      $("#random, #result, #afterPlayLose, #afterPlayWin").empty();
   }
 
