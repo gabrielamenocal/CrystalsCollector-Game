@@ -18,20 +18,7 @@ $(document).ready(function() {
         $("#random").html(matchvalue);
     });
 
-    // try{
-    
-    //     if(matchvalue!="")  throw "";
-    //     $("#error").hide();
-    // }    
-
-    // catch(err)
-    // {
-        
-    //     $("#error").text("Please press the Random Button." + err);
-    //     $("#error").show();
-
-    // }
-     
+      
     for (var i =0; i< images.length; i++){
 
         var newimage=$("<img>");
@@ -70,6 +57,21 @@ $(document).ready(function() {
             },3000);
 
           }
+          else {
+            try{
+    
+                if(matchvalue!="")  throw "";
+                $("#error").hide();
+            }    
+        
+            catch(err)
+            {
+                
+                $("#error").text("Please press the Random Button." + err);
+                $("#error").show();
+        
+            }
+          };
 
     });
 
