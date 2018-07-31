@@ -8,6 +8,8 @@ var win=0; losses=0;
 $("#afterPlayLose").hide();
 $("#afterPlayWin").hide();
 $("#error").hide();
+$("#gems").hide();
+
 
 // Crystal 1-12 and random 19-120.
 $(document).ready(function() {  
@@ -16,6 +18,8 @@ $(document).ready(function() {
 
         matchvalue = Math.round((Math.random()*101) + 19 );      
         $("#random").html(matchvalue);
+        $("#gems").show();
+
     });
 
       
